@@ -144,11 +144,12 @@ class Shopware_Controllers_Frontend_Detail extends Enlight_Controller_Action
         // SW-3493 sArticle->getArticleById and sBasket->sGetGetBasket differ in camelcase
         $product['sReleaseDate'] = $product['sReleasedate'];
 
-        
+        $day = (date_diff($product['lieferung']) (date_create('now')));
 
         $this->View()->assign('sBreadcrumb', $breadcrumb);
         $this->View()->assign('sCategoryInfo', $categoryInfo);
         $this->View()->assign('sArticle', $product);
+        $this->View()->assign('sDay', $day);
         $this->View()->assign('rand', Random::getAlphanumericString(32));
 
 
