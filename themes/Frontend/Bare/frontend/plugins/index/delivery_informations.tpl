@@ -14,44 +14,8 @@
             {/if}
 
 
-            {$delivery = ($sArticle.lieferung|date_format:"%Y%m%d")-($smarty.now|date_format:"%Y%m%d")}
 
-
-            {if ($delivery>0) }
-
-                <p class="delivery--information">
-                        <span class="delivery--text delivery--text-available ">
-                            <i class="delivery--status-icon delivery--status-available"></i>
-                            Delivery in  {$delivery} Days
-                            {s name="DeliveryDataDelayed"}{/s}
-                        </span>
-                </p>
-            {/if}
-
-
-        {if ($delivery<0) }
-            <p class="delivery--information">
-                        <span class="delivery--text ">
-                            <i class="delivery--status-icon delivery--status-not-available"></i>
-                            Delivery Delyed by {$delivery} Days.
-
-                        </span>
-            </p>
-
-        {/if}
-
-            {if ($delivery==0) }
-
-            <p class="delivery--information">
-                        <span class="delivery--text delivery--text-available ">
-                            <i class="delivery--status-icon delivery--status-available"></i>
-                             Delivered on Same day.
-                        </span>
-            </p>
-
-
-
-        {/if}
+         {*  {include file="custom/plugins/swagpluginsystem/resources/views/frontend/routing_demo/index.tpl"} *}
 
 
 
@@ -59,7 +23,9 @@
 
 
 
-        <!--    {if isset($sArticle.active) && !$sArticle.active}
+
+
+            {if isset($sArticle.active) && !$sArticle.active}
                 {block name='frontend_widgets_delivery_infos_not_active'}
                     <link itemprop="availability" href="https://schema.org/LimitedAvailability" />
                     <p class="delivery--information">
@@ -129,7 +95,7 @@
                         </span>
                     </p>
                 {/block}
-            {/if}-->
+            {/if}
         {/block}
 
 
