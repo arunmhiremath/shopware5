@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="en">PAY. Payment Methods</label>
+    <label lang="de">PAY. Zahlungsmethoden</label>
+    <label lang="nl">PAY. Betaalmethoden</label>
+    <version>3.3.5</version>
+    <copyright>(c) by PAY.</copyright>
+    <license>MIT</license>
+    <link>https://www.pay.nl</link>
+    <author>PAY.</author>
+    <compatibility minVersion="5.6.0"/>
+    <description lang="en">
+        <![CDATA[
+            <b>PAY. Payment methods</b>
+            <p>This plugin adds <a href='https://admin.pay.nl'>PAY.</a>'s payment methods to your store.</p>
+        ]]>
+    </description>
+    <description lang="nl">
+        <![CDATA[
+            <b>PAY. Betaalmethoden</b>
+            <p>Met deze plugin voeg je <a href='https://admin.pay.nl'>PAY.</a>'s betaalmethoden toe aan je webshop.</p>
+        ]]>
+    </description>
+    <description lang="de">
+        <![CDATA[
+            <b>PAY. Zahlungsmethoden</b>
+            <p>Dieses Plugin fügt Ihrem Shop die Zahlungsmethoden von <a href='https://admin.pay.nl'>PAY.</a> hinzu</p>
+        ]]>
+    </description>
+    <changelog version="3.3.5">
+        <changes lang="nl">
+            - optie toegevoegd om nulbedragen toe te staan in checkout
+            - Iconen van betaalmethoden bijgewerkt
+        </changes>
+        <changes lang="en">
+            - Added option to allow orders with zero amount
+            - Updated icons for PMs
+        </changes>
+        <changes lang="de">
+            - Option zum Zulassen von Nullbeträgen hinzugefügt
+            - Aktualisierte Markensymbole Zahlungsarten
+        </changes>
+    </changelog>
+    <changelog version="3.3.4">
+        <changes lang="nl">
+            - verbeterde error logging
+        </changes>
+        <changes lang="en">
+            - Improved error logging
+        </changes>
+        <changes lang="de">
+            - verbesserte Fehlerprotokollierung
+        </changes>
+    </changelog>
+    <changelog version="3.3.3">
+        <changes lang="nl">
+            - Infoknop toegevoegd voor beschrijving van de betaalmethode
+            - Functionaliteit toegevoegd voor het beheren van de weergave van de infoknop voor betaalmethoden
+            - Geboortedatum weergave verbeterd voor mobiele versie
+        </changes>
+        <changes lang="en">
+            - Added info icon for payment method description
+            - Added functionality to manage displaying payment method info
+            - Fix DOB view on mobile version
+        </changes>
+        <changes lang="de">
+            - Info-Symbol für die Beschreibung der Zahlungsmethode hinzugefügt
+            - Funktionalität zur Verwaltung der Anzeige von Zahlungsmethoden-Informationen hinzugefügt
+            - DOB-Ansicht in der mobilen Version korrigiert
+        </changes>
+    </changelog>
+    <changelog version="3.3.2">
+        <changes lang="nl">
+            - Verwijderen van oude geannuleerde orders op verzoek opgelost
+        </changes>
+        <changes lang="en">
+            - Fixed removing old cancelled orders on notify call
+        </changes>
+        <changes lang="de">
+            - Korrigierte Entfernung alter stornierter Aufträge bei Benachrichtigungsanruf
+        </changes>
+    </changelog>
+    <changelog version="3.3.1">
+        <changes lang="nl">
+            - Functionaliteit toegevoegd om banken op te slaan in de database
+            - Labels toegevoegd voor de geboorte-datum en telefoonnummer velden
+            - Om de bankselectie toe te voegen aan de database moet je een van deze twee dingen doen: 1) de plugin opnieuw installeren 2) op deactiveren/activeren klikken bij de plugin instellingen
+        </changes>
+        <changes lang="en">
+            - Added functionality of saving banks into DB
+            - Added labels for the DoB and Phone-number fields
+            - To load banks to DB you need to do one of these: 1) reinstall the plugin 2) click on deactivate/activate the plugin
+        </changes>
+        <changes lang="de">
+            - Hinzugefügte Funktionalität zum Banken in Datenbank zu speichern
+            - Beschriftungen für die Geburtsdatum- und Telefonnummernfelder hinzugefügt
+            - Um Bänke in die DB zu laden, müssen Sie eine dieser Aktionen durchführen: 1) Installieren Sie das Plugin neu 2) Klicken Sie auf die Schaltfläche Deaktivieren/Aktivieren des Plugins
+        </changes>
+    </changelog>
+    <changelog version="3.3.0">
+        <changes lang="nl">
+            - Toont de geselecteerde bank op de checkoutpagina
+            - Melding toegevoegd voor geannuleerde of afgewezen betalingen
+            - Lijst met banken toegevoegd bij iDeal
+            - Veld geboortdatum toegevoegd voor achteraf betaalmethodes.
+            - Logos toegevoegd
+            - Minimiale Shopware versie bijgesteld naar 5.6.0
+        </changes>
+        <changes lang="en">
+            - Show the selected bank issuer on the confirm checkout page;
+            - When activating plugin, the admin will choose whether to show the banks assigned for the iDeal payment method;
+            - When a transaction is canceled or denied, a user will see a message;
+            - When iDeal is chosen as the payment method, the drop-down with the list of banks appears (in the PM settings of the customer's account);
+            - When changing a payment method, the description of the newly selected one is provided;
+            - When choosing a certain payment method (SprayPay, Credit Click, Billink, AfterPay, Klarna, IN3), a customer will be asked to fill in the fields with DOB and phone number (in case this info was not provided during the registration);
+            - New logos of payment methods are added;
+            - The plugin will only be compatible with the Shopware versions 5.6.0 or higher;
+            - Fixed the notify endpoint (so that a correct response was sent).
+        </changes>
+        <changes lang="de">
+            - Zeigt die ausgewählte Bank auf der Checkout-Seite an
+            - Benachrichtigung für stornierte oder abgelehnte Zahlungen hinzugefügt
+            - Banken werden bei iDeal angezeigt
+            - Feld Geburtsdatum für Nachzahlungsmethoden hinzugefügt.
+            - Logos hinzugefügt
+            - Die minimale Shopware-Version ist 5.6.0
+        </changes>
+    </changelog>
+    <changelog version="3.2.1">
+        <changes lang="nl">Probleem met exchange opgelost.</changes>
+        <changes lang="en">Fixed exchange error.</changes>
+        <changes lang="de">Problem mit dem Exchange behoben.</changes>
+    </changelog>
+    <changelog version="3.2.0">
+        <changes lang="nl">Testbutton toegevoegd. Logging toegevoegd.</changes>
+        <changes lang="en">Added testbutton. Added logging.</changes>
+        <changes lang="de">Testknopf hinzugefügt. Logging hinzugefügt.</changes>
+    </changelog>
+    <changelog version="3.1.5">
+        <changes lang="nl">Probleem met shippingtax opgelost.</changes>
+        <changes lang="en">Fixed problem with vat shippingtax.</changes>
+        <changes lang="de">Problem mit der Mehrwertsteuer behoben.</changes>
+    </changelog>
+    <changelog version="3.1.4">
+        <changes lang="nl">
+            Transactie verwerking bijgewerkt.
+            Sessie wordt niet meer meegegeven met exchange.
+        </changes>
+        <changes lang="en">
+            Updated transaction processing.
+            Session is no longer shared between exchange and user.
+        </changes>
+        <changes lang="de">
+            Aktualisierte Transaktionsverarbeitung.
+            Die Sitzung wird nicht mehr zwischen Exchange und Benutzer geteilt.
+        </changes>
+    </changelog>
+    <changelog version="3.1.3">
+        <changes lang="nl">
+            Nederlands vertaling uit het menu verwijderd.
+            Shopware geeft een fout wanneer een menu item niet engels of duits is.
+        </changes>
+        <changes lang="en">
+            Removed dutch translation of the menu item.
+            Shopware throws an exception when the menu item is not english or german
+        </changes>
+        <changes lang="de">
+            Die Niederländische Übersetzung des Menüpunkts wurde entfernt.
+            Shopware löst eine exception aus, wenn der Menüpunkt nicht Deutsch oder Englisch ist.
+        </changes>
+    </changelog>
+    <changelog version="3.1.2">
+        <changes lang="nl">
+            Plugin icon bijgewerkt.
+            Labels en omschrijvingen multilang gemaakt.
+            Sessie uit exchange call verwijderd.
+        </changes>
+        <changes lang="en">
+            Updated plugin icon.
+            Added lang attributes to all labels and descriptions.
+            Removed session from exchange call.
+        </changes>
+        <changes lang="de">
+            Aktualisiertes Plugin-Symbol.
+            Allen Bezeichnungen und Beschreibungen wurden lang-Attribute hinzugefügt.
+            Session aus exchange call entfernt.
+        </changes>
+    </changelog>
+    <changelog version="3.1.1">
+        <changes lang="nl">
+            Instelling toegevoegd voor extra adress 1 en 2 for huisnummer extensie.
+            Betere fout afhandeling bij exchangecalls.
+        </changes>
+        <changes lang="en">
+            Added setting to use additional address 1 and 2 for house number and extension.
+            Additional error handling on exchange.
+        </changes>
+        <changes lang="de">
+            Einstellung hinzugefügt, um die zusätzlichen Adressen 1 und 2 für Hausnummer und Nebenstelle zu verwenden. Zusätzliche Fehlerbehandlung beim Tausch.
+        </changes>
+    </changelog>
+    <changelog version="3.1.0">
+        <changes lang="en">Added refund functionality</changes>
+        <changes lang="de">Rückerstattungsfunktion hinzugefügt</changes>
+        <changes lang="nl">Terugbetalingsfunctionaliteit toegevoegd</changes>
+    </changelog>
+    <changelog version="3.0.1">
+        <changes lang="en">Added link between salutations and gender</changes>
+        <changes lang="de">Link zwischen Begrüßung und Geschlecht hinzugefügt</changes>
+        <changes lang="nl">Koppeling tussen begroetingen en geslacht toegevoegd</changes>
+    </changelog>
+    <changelog version="3.0.0">
+        <changes lang="en">First v3 release</changes>
+        <changes lang="de">Erste v3-Veröffentlichung</changes>
+        <changes lang="nl">Eerste v3 release</changes>
+    </changelog>
+</plugin>

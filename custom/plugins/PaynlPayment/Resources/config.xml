@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element scope="shop">
+            <name>tokenCode</name>
+            <label lang="en">Token-Code (AT-xxxx-xxxx)</label>
+            <label lang="nl">Token-Code (AT-xxxx-xxxx)</label>
+            <label lang="de">Token-Code (AT-xxxx-xxxx)</label>
+            <description lang="en">The AT-code belonging to your API-token, you can find your tokencode at: https://admin.pay.nl/company/tokens</description>
+            <description lang="nl">De AT-code die bij je API-token hoort, je kunt deze vinden op: https://admin.pay.nl/company/tokens</description>
+            <description lang="de">Der AT-Code, der zu Ihrem API-token gehört, finden Sie unter: https://admin.pay.nl/company/tokens</description>
+        </element>
+        <element scope="shop">
+            <name>apiToken</name>
+            <label lang="en">API-token</label>
+            <label lang="nl">API-token</label>
+            <label lang="de">API-token</label>
+            <description lang="en">Your API token, you can find your API tokens at: https://admin.pay.nl/company/tokens</description>
+            <description lang="nl">Uw API-token, u kunt uw API-tokens vinden op: https://admin.pay.nl/company/tokens</description>
+            <description lang="de">Ihr API-Token finden Sie unter https://admin.pay.nl/company/tokens</description>
+        </element>
+        <element scope="shop">
+            <name>serviceId</name>
+            <label lang="en">Service-ID (SL-xxxx-xxxx)</label>
+            <label lang="nl">Service-ID (SL-xxxx-xxxx)</label>
+            <label lang="de">Service-ID (SL-xxxx-xxxx)</label>
+            <description lang="en">Your Service-ID (SL-xxxx-xxxx), You can find your Service-ID at: https://admin.pay.nl/programs/programs</description>
+            <description lang="nl">Uw Service-ID (SL-xxxx-xxxx), u kunt uw Service-ID vinden op: https://admin.pay.nl/programs/programs</description>
+            <description lang="de">Ihre Service-ID (SL-xxxx-xxxx), Ihre Service-ID finden Sie unter: https://admin.pay.nl/programs/programs</description>
+        </element>
+        <element scope="shop" type="boolean">
+            <name>testMode</name>
+            <label lang="en">Test mode</label>
+            <label lang="nl">Test mode</label>
+            <label lang="de">Test mode</label>
+            <description lang="en">Enable this if you want to start all transactions in test mode</description>
+            <description lang="nl">Schakel dit in als u alle transacties in de testmodus wilt starten</description>
+            <description lang="de">Aktivieren Sie dies, wenn Sie alle Transaktionen im Testmodus starten möchten</description>
+        </element>
+        <element scope="shop" type="boolean">
+            <name>allow_refunds</name>
+            <label lang="en">Allow refunds</label>
+            <label lang="nl">Restituties toestaan</label>
+            <label lang="de">Erstattungen zulassen</label>
+            <description lang="en">Enable this to allow refunds to be processed from the order list</description>
+            <description lang="nl">Schakel dit in om toe te staan dat restituties worden verwerkt vanuit de bestellijst</description>
+            <description lang="de">AAktivieren Sie diese Option, damit Rückerstattungen von der Bestellliste verarbeitet werden können</description>
+        </element>
+        <element scope="shop" type="boolean">
+            <name>show_banks</name>
+            <label lang="en">Show banks</label>
+            <label lang="nl">Banken tonen</label>
+            <label lang="de">Banken anzeigen</label>
+            <description lang="en">After a payment method is selected, a drop-down with the list of available banks (which belong to this payment method) will appear.</description>
+            <description lang="nl">After a payment method is selected, a drop-down with the list of available banks (which belong to this payment method) will appear.</description>
+            <description lang="de">Nachdem eine Zahlungsmethode ausgewählt wurde, erscheint eine Dropdown-Liste mit der verfügbaren Banken (die zu dieser Zahlungsmethode gehören).</description>
+        </element>
+        <element scope="shop" type="select" >
+            <name>show_description</name>
+            <label lang="en">Show description</label>
+            <label lang="nl">Toon beschrijving</label>
+            <label lang="de">Beschreibung anzeigen</label>
+            <store>
+                <option>
+                    <value>show_payment_information</value>
+                    <label lang="en">Show payment method info</label>
+                    <label lang="nl">Toon betaalmethode beschrijving</label>
+                    <label lang="de">Zahlungsinformationen anzeigen</label>
+                </option>
+                <option>
+                    <value>do_not_show</value>
+                    <label lang="en">Do not show payment method info</label>
+                    <label lang="nl">Betaalmethode beschrijving niet tonen</label>
+                    <label lang="de">Zahlungsinformationen nicht anzeigen</label>
+                </option>
+                <option>
+                    <value>show_only_desktop</value>
+                    <label lang="en">Show only on desktop</label>
+                    <label lang="nl">Alleen op desktop tonen</label>
+                    <label lang="de">Nur auf dem Desktop anzeigen</label>
+                </option>
+            </store>
+        </element>
+        <element scope="shop" type="boolean">
+            <name>status_mail</name>
+            <label lang="en">Send status mails</label>
+            <label lang="nl">Status mails versturen</label>
+            <label lang="de">Status-E-Mails senden</label>
+            <description lang="en">Enable this if you want the plugin to send an email everytime the status gets updated</description>
+            <description lang="nl">Schakel dit in als u een email naar de klant wilt sturen, elke keer dat de status van een tranactie wijzigt</description>
+            <description lang="de">Aktivieren Sie diese Option, wenn Sie bei jeder Änderung des Status einer Transaktion eine E-Mail an den Kunden senden möchten</description>
+        </element>
+        <element scope="shop">
+            <name>female_salutations</name>
+            <label lang="en">Female salutations</label>
+            <label lang="de">Weibliche Anrede</label>
+            <label lang="nl">Vrouwelijke begroetingen</label>
+            <value>mrs, ms, miss, ma'am, frau, mevrouw, mevr</value>
+            <description lang="en">Female salutations, used to determine the gender of the customer</description>
+            <description lang="de">Weibliche Anreden, verwendet, um das Geschlecht des Kunden zu bestimmen</description>
+            <description lang="nl">Vrouwelijke begroetingen, gebruikt om het geslacht van de klant te bepalen</description>
+        </element>
+        <element scope="shop" type="boolean">
+            <name>additional_address_fields</name>
+            <label lang="en">Use additional address fields</label>
+            <label lang="nl">Extra adres velden gebruiken</label>
+            <label lang="de">Zusätzliche adressfelder verwenden</label>
+            <description lang="en">Enable this when you are using additional address field 1 and 2 for house number and house number addition</description>
+            <description lang="nl">Schakel dit in wanneer u extra adresveld 1 en 2 gebruikt voor huisnummer en huisnummertoevoeging </description>
+            <description lang="de">Aktivieren Sie dies, wenn Sie das zusätzliche Adressfeld 1 und 2 für das Hinzufügen von Hausnummer und Hausnummer verwenden</description>
+        </element>
+        <element scope="shop" type="boolean">
+            <name>allow_empty_amount</name>
+            <label lang="en">Allow zero amount orders in checkout</label>
+            <label lang="nl">Nulbedragen toestaan in checkout</label>
+            <label lang="de">Nullbetragsaufträge erlauben im checkout</label>
+            <description lang="en">Allow zero amount orders in checkout: Yes/No</description>
+            <description lang="nl">Nulbedragen toestaan in checkout: Ja/Nee</description>
+            <description lang="de">Nullbetragsaufträge erlauben im checkout: Ja/Nein</description>
+        </element>
+        <element type="button">
+            <name>buttonTest</name>
+            <label lang="de">Test API verbindung</label>
+            <label lang="en">Test API connection</label>
+            <label lang="nl">Test API verbinding</label>
+            <description lang="de">Verwenden Sie diese Taste, um die Verbindung zwischen dem PAY. API und Ihrem Webshop zu testen.</description>
+            <description lang="en">Use this button to test the connection between the PAY. API and your webshop.</description>
+            <description lang="nl">Gebruik deze knop om de verbinding tussen de PAY. API en uw webshop te testen.</description>
+            <options>
+                <handler>
+                    <![CDATA[
+                    function() {
+                      Ext.Ajax.request({
+                        url: 'PaynlApiTest/test',
+                        success: function (response) {
+                          Shopware.Msg.createGrowlMessage(response.statusText, response.responseText)
+                        },
+                        failure: function (response) {
+                          if (response.status === 404) {
+                            Shopware.Msg.createGrowlMessage('Plugin Manager', 'Please activate plugin before testing api.');
+                          } else {
+                            Shopware.Msg.createGrowlMessage(response.statusText, response.responseText)
+                          }
+                        }
+                      });
+                    }
+                    ]]>
+                </handler>
+            </options>
+        </element>
+    </elements>
+</config>

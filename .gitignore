@@ -25,9 +25,9 @@ Thumbs.db
 /engine/Shopware/Plugins/Community/Frontend/*
 /engine/Shopware/Plugins/Local/Backend/*
 /engine/Shopware/Plugins/Local/Core/*
+/engine/Shopware/Plugins/Local/Frontend/*
 
 
-/custom/plugins/*
 
 # User installed themes
 /themes/Frontend/*
